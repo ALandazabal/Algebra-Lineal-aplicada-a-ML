@@ -1,0 +1,40 @@
+ALGEBRA LINEAL APLICADA A MACHINE LEARNING
+
+Clase 10:
+por qué es importante aplicar SVD a una imagen?
+Tiene implicancias directas en la comprehensión en el momento en que tienen que transmitirlas o qué se puede hacer para ocupar menos espacio
+
+Con respecto a las imágenes no es importante el valor que estamos obteniendo sino la relación que éxiste entre ellos.
+
+Por motivos de optimización en ML, nos conviene que todos nuestros valores se encuentren entre 0 y 1
+
+Clase 11:
+Los valores singulares están ordenados de manera tal que el primer valor es el que contine más información
+
+Clase 12:
+La compresión de imágenes mediante el uso de la descomposición svd hace uso de que muy poco de los valores singulares realmente están representando información.
+
+Con un poco de los valores singulares se puede detallar la imagen que estamos trabajando
+
+Clase 13:
+Pseudo inversa de Moore Penrose: Es una aplicación directa de svd y permite resolver sistemas de ecuaciones lineales
+
+La inversa común se puede decidir en multiplicar a derecha o a izquierda.  Pero si se hace con la inversa, se tiene algo muy alejado con la identidad, y por lo tanto no son conmutativa
+
+Python utiliza la svd porque es más certera y computacionalmente más efectiva teniendo menos error
+
+Clase 14:
+Un sistema de ecuaciones AxB puede tener 0 soluciones, 1 solución, o infinitas soluciones
+
+Si tiene una solución, es que tiene inversa, es una matriz cuadrada y todos sus vectores son linealmente independientes
+
+Clase 15:
+La maldición de la dimensión: Por cada variable que yo agrego al conjunto de datos voy a necesitar exponencialmente más muestras para poder obtener la misma relevancia estadistica
+
+np.hstack: funcione que une vectores en uno solo
+
+Clase 16:
+PCA: Análisis de componentes principales, es una técnica muy util para reducir la cantidad de dimensiones con las que estamos trabajando
+
+Clase 17:
+Con un conjunto de datos muy peequeño, el aumentar la cantidad de información que queremos observar aumenta drasticamente el tiempo de computacion que necesitamos para poder obtener los mismos resultados
